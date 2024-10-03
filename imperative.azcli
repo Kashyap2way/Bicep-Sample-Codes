@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+az group create --name storage-group --location eastus
+az storage account create --name storage584290859230 --resource-group storage-group --access-tier hot --https-only true --sku Standard_LRS 
