@@ -2,7 +2,7 @@
 param vnetName string = 'myPrivateVNet'
 param subnetName string = 'mySubnet'
 param location string = resourceGroup().location
-param storageAccountName string = 'mystorageacct001'
+var storageAccountName = 'storage1${uniqueString(resourceGroup().id)}'
 param addressPrefix string = '10.0.0.0/16'
 param subnetPrefix string = '10.0.1.0/24'
 
